@@ -203,6 +203,7 @@ static struct keyword_s
 	{ "reopen", TK_REOPEN }, // [Nash]
 	{ "morphactor", TK_MORPHACTOR }, // [Dasperal]
     { "lumpreadarray", TK_LUMPREADARRAY }, // [TDRR]
+	{ "busy", TK_BUSY}, // [TDRR]
 };
 
 #define NUM_KEYWORDS (sizeof(Keywords)/sizeof(Keywords[0]))

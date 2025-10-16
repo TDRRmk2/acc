@@ -40,6 +40,7 @@ enum
 {
 	NET_SCRIPT_FLAG			= 0x0001,
 	CLIENTSIDE_SCRIPT_FLAG	= 0x0002, // [BB]
+	BUSY_SCRIPT_FLAG		= 0x0004, // [TDRR]
 };
 
 // Or'ed with variable index when passing variables of type "out"

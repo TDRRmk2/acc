@@ -785,6 +785,11 @@ static void OuterScript(void)
 		scriptFlags |= CLIENTSIDE_SCRIPT_FLAG;
 		TK_NextToken();
 	}
+	if(tk_Token == TK_BUSY)
+	{
+		scriptFlags |= BUSY_SCRIPT_FLAG;
+		TK_NextToken();
+	}
 	CountScript(scriptType);
 	PC_AddScript(scriptNumber, scriptType, scriptFlags, ScriptVarCount);
 	pc_LastAppendedCommand = PCD_NOP;
